@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+    <StackLayout
+        VerticalOptions="Center">
+        <Label
+            x:Name="Timer"
+            Text="0.000"
+            TextColor="Black"
+            HorizontalTextAlignment="Center"/>
+
+        <ImageButton
+            x:Name="startsStopButton"
+            Clicked="OnStarStop"
+            Source="dotnet_bot.svg"
+            HeightRequest="60"
+            WidthRequest="60"/>
+
+        <ImageButton
+            Clicked="OnReset"
+            Source="dotnet_bot.svg"
+            HeightRequest="60"
+            WidthRequest="60"/>
+    </StackLayout>
+    
+</ContentPage>
